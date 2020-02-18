@@ -11,6 +11,7 @@ module.exports = {
           return car.climateOn()
         }
       })
-      .then(callback)
+      .then(() => callback(null))
+      .catch(error => console.error(error) || callback(error))
   }
 }
