@@ -1,5 +1,5 @@
 {
-  "name": "yrno",
+  "name": "serverless-home-automation",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.2",
-    "momentjs": "^2.0.0",
     "yr.no-forecast": "^2.1.0"
   },
   "devDependencies": {
