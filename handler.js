@@ -1,5 +1,5 @@
 const car = require('./service/car')
-const { getWeather } = require('./service/weather')
+const getWeather = require('current-weather-data')
 
 const { HOME_LONGITUDE, HOME_LATITUDE } = process.env
 
