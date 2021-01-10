@@ -8,6 +8,7 @@ provider:
   stage: dev
   environment:
     MY_TESLA_API: ${file(./config.json):MY_TESLA_API}
+    GOOGLE_TOKEN: ${file(./config.json):GOOGLE_TOKEN}
     HOME_LONGITUDE: ${file(./config.json):HOME_LONGITUDE}
     HOME_LATITUDE: ${file(./config.json):HOME_LATITUDE}
 
@@ -16,4 +17,4 @@ functions:
   check:
     handler: handler.handler
     events:
-      - schedule: cron(30 5 ? * MON-FRI *)
+      - schedule: cron(30 4 ? * MON-FRI *)
